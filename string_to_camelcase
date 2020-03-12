@@ -1,0 +1,13 @@
+def to_camel_case(text):
+    #your code here
+    if len(text)==0:
+        return text
+    text=text.replace("_","-")
+    t=text.split("-")
+    for k in range (len(t)):
+        if k==0:
+            continue
+        else:
+            t[k]=t[k].capitalize()
+        result = "".join(k for k in t)
+    return result 
